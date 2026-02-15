@@ -1,0 +1,68 @@
+@import url(global.css);
+
+.page-heading {
+  font-size: 40px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.store-item {
+  border: 1px solid;
+  min-width: fit-content;
+  height: auto;
+  border-radius: 0.1em;
+  background-color: white;
+  transition: all 0.2s;
+  word-break: break-word;
+  width: 50%;
+}
+
+.store-tile {
+  color: black;
+  cursor: pointer;
+}
+
+.product-container {
+  display: flex;
+  min-width: fit-content;
+}
+
+.product-container div {
+  display: inline;
+  padding: 15px;
+}
+
+.store-item:hover {
+  transform: scale(1.03);
+}
+
+.store-table {
+  width: 100%;
+  border-spacing: 10px;
+}
+
+.product-image-holder {
+  width: 35%;
+}
+
+.product-info-holder {
+  width: 65%;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.book-name {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.book-author {
+  font-style: italic;
+}
+
+.price-badge {
+  font-weight: 700;
+}

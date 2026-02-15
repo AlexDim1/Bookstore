@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/product.css" />
+    <script src="../scripts/product.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title></title>
+  </head>
+  <body>
+    <div id="background-photo-container">
+      <div class="content-container">
+        <div id="header">
+          <h1 class="header-heading">Bookstore.bg</h1>
+          <nav id="navbar">
+            <ul id="navbar-menu">
+              <li class="navbar-menu-item">
+                <a href="../index.html" class="menu-link">Начало</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="store.html" class="menu-link">Книги</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="admin.html" class="menu-link">Admin</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="main">
+          <div class="photo-and-buy-form-container">
+            <div class="photo-container">
+              <img
+                src=""
+                alt=""
+                class="product-photo"
+              />
+            </div>
+            <div class="buy-form-container">
+              <p id="price"></p>
+              <form action="" class="buy-form" name="buy-form">
+                <p>
+                  <label for="quantity">Брой</label><br />
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                </p>
+                <p>
+                  <label for="name-input">Име:</label><br />
+                  <input type="text" id="name-input" name="user_name" placeholder="Вашето име"/>
+                </p>
+                <p>
+                  <label for="address-input">Адрес:</label><br />
+                  <input
+                    name="user_address"
+                    id="address-input"
+                    type="text"
+                    placeholder="Вашият адрес"
+                  ></input>
+                </p>
+                <p align="right">
+                  <button type="button" id="buy-button" onclick="buyProduct()">Поръчай</button>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="product-info-container">
+            <h3 class="product-name"></h3>
+            <h4 class="description-heading">Автор</h4>
+            <p class="product-info" id="author"></p>
+            <h4 class="description-heading">Описание</h4>
+            <p class="product-info" id="description">
+              
+            </p>
+            <h4 class="description-heading">Страници</h4>
+            <p class="product-info" id="page-count"></p>
+          </div>
+          <div class="reviews">
+            <div class="reviews-container">
+              <h4 id="reviews-heading" class="description-heading">Потребителски ревюта</h4>
+              <p id="reviews-message">Няма ревюта</p>
+            </div>
+            <div class="new-review-container">
+              <form action="" class="new-review-form">
+                <label for="new-review-content">Вашето мнение:</label><br />
+                <textarea
+                  name="new_review"
+                  id="new-review-content"
+                  cols=""
+                  rows="5"
+                  placeholder="Коментар"
+                ></textarea
+                ><br />
+                <p align="right" id="button-send-holder">
+                  <input
+                    type="button"
+                    value="Изпращане"
+                    id="post-review-button"
+                    onclick="postReview()"
+                  />
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-container" id="footer-links">
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="../index.html" class="footer-link">Начало</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="store.html" class="footer-link">Книги</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="admin.html" class="footer-link">Admin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container" id="footer-contacts">
+          <h5>Контакти</h5>
+          <p class="footer-contact-info">
+            Адрес: гр. София, бул. „княз Александър Дондуков“ 2 <br />
+            Телефон: 0898 123 456 <br />
+            Email: support@bookstore.bg
+          </p>
+        </div>
+      </div>
+      <br />
+    </footer>
+  </body>
+</html>

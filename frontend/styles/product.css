@@ -1,0 +1,133 @@
+@import url(global.css);
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Roboto:wght@700;800&family=Merriweather:ital,wght@0,400;1,400;1,900&display=swap");
+
+#main {
+  padding-top: 1vw;
+}
+
+textarea {
+  resize: none;
+}
+
+.photo-and-buy-form-container {
+  display: flex;
+  padding: 1vw;
+  min-width: fit-content;
+}
+
+.product-photo {
+  width: 75%;
+  height: auto;
+  min-width: 300px;
+}
+
+.photo-container,
+.buy-form-container {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  margin: 15px;
+  padding: 10px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-form {
+  padding: 20px 20px 20px 0;
+}
+
+.buy-form *,
+.new-review-form * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-name {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.description-heading {
+  font-size: 1em;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.product-info {
+  margin-top: 1px;
+  font-style: italic;
+}
+
+#quantity {
+  width: 40px;
+}
+
+#buy-button,
+#post-review-button {
+  font-family: "Roboto", sans-serif;
+  height: 45px;
+  padding: 7px 15px;
+  background-color: inherit;
+  color: black;
+  border-radius: 0.1em;
+  border-color: black;
+  font-weight: 500;
+  font-size: 20px;
+  width: fit-content;
+  min-width: fit-content;
+  transition: all 0.2s;
+}
+
+#buy-button:hover,
+#post-review-button:hover {
+  cursor: pointer;
+  background-color: var(--hover-color);
+  color: white;
+}
+
+.reviews-heading {
+  font-size: 1.15em;
+  margin-bottom: 10px;
+}
+
+.review-item {
+  margin: 20px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-content {
+  margin: 0;
+}
+
+.review-date {
+  float: right;
+  margin-bottom: 0;
+  margin-left: auto;
+  color: grey;
+  font-style: italic;
+  font-size: 15px;
+}
+
+#price {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.buy-message-error {
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.644);
+  font-size: 18px;
+}
+
+.buy-message-success {
+  padding: 20px;
+  background-color: rgba(24, 203, 24, 0.644);
+  font-size: 18px;
+}

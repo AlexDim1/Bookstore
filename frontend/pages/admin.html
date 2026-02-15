@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <script src="../scripts/admin.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <div id="background-photo-container">
+      <div class="content-container">
+        <div id="header">
+          <h1 class="header-heading">Bookstore.bg</h1>
+          <nav id="navbar">
+            <ul id="navbar-menu">
+              <li class="navbar-menu-item">
+                <a href="../index.html" class="menu-link">Начало</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="store.html" class="menu-link">Книги</a>
+              </li>
+              <li class="navbar-menu-item">
+                <a href="admin.html" class="menu-link">Admin</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="main">
+            <div class="tab">
+                <button class="tab-link" onclick="showTab(event, 'products')" id="products-button">Продукти</button>
+                <button class="tab-link" onclick="showTab(event, 'orders')" id="orders-button">Поръчки</button>
+            </div>
+            <div class="tab-content" id="products">
+                <table id="products-table">
+                    <thead>
+                        <tr>
+                            <th class="table-heading">Id</th>
+                            <th class="table-heading">Име</th>
+                            <th class="table-heading">Автор</th>
+                            <th class="table-heading">Цена</th>
+                            <th class="table-heading">Бр. продажби</th>
+                            <th class="product-button"></th>
+                            <th class="product-button"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="products-body">
+                        
+                    </tbody>
+                </table>
+                <form action="" class="product-info-form">
+                  <label for="name-input">Име:</label><br>
+                  <input type="text" id="name-input"><br>
+                  <label for="author-input">Автор:</label><br>
+                  <input type="text" id="author-input"><br>
+                  <label for="price-input">Цена:</label><br>
+                  <input type="text" id="price-input"><br>
+                  <label for="pageCount-input">Страници:</label><br>
+                  <input type="text" id="pageCount-input"><br>
+                  <label for="short-description-input">Кратко описание:</label><br>
+                  <textarea name="" id="short-description-input" cols="30" rows="3"></textarea>
+                  <label for="description-input">Описание:</label><br>
+                  <textarea name="" id="description-input" cols="30" rows="10"></textarea>
+                  <p align="right">
+                    <input type="button" value="Нов продукт" id="new-product-button" onclick="addProduct()">
+                    <input type="button" value="Запази" id="save-button" onclick="saveChanges()">
+                  </p>
+                </form>
+            </div>
+            <div class="tab-content" id="orders">
+                <table id="orders-table">
+                    <thead>
+                        <tr>
+                            <th class="table-heading">Id</th>
+                            <th class="table-heading">Продукт</th>
+                            <th class="table-heading">Име</th>
+                            <th class="table-heading">Адрес</th>
+                            <th class="table-heading">Дата</th>
+                            <th class="table-heading">Брой</th>
+                            <th class="table-heading">Обща цена</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-container" id="footer-links">
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="../index.html" class="footer-link">Начало</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="store.html" class="footer-link">Книги</a>
+            </li>
+            <li class="footer-link-item">
+              <a href="admin.html" class="footer-link">Admin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container" id="footer-contacts">
+          <h5>Контакти</h5>
+          <p class="footer-contact-info">
+            Адрес: гр. София, бул. „княз Александър Дондуков“ 2 <br />
+            Телефон: 0898 123 456 <br />
+            Email: support@bookstore.bg
+          </p>
+        </div>
+      </div>
+      <br />
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+  --hover-color: #8a7968;
+}
+
+body {
+  margin: 0px 0px;
+}
+
+.menu-link {
+  font-size: 20px;
+}
+
+footer {
+  background-color: black;
+  padding: 2vh 15vw;
+  height: 5%;
+}
+
+.footer-link-item {
+  list-style: none;
+}
+
+.footer-links-list {
+  padding: 0 0;
+}
+
+footer a,
+footer p,
+footer h5 {
+  color: gray;
+  margin: 0;
+  word-break: break-word;
+}
+
+h5 {
+  font-size: 19px;
+}
+
+.footer-link-item {
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  border: solid;
+  height: min-content;
+}
+
+.footer-container {
+  display: inline-block;
+  margin: 20px;
+  width: 50%;
+}
+
+.footer-link {
+  font-weight: 600;
+}
+
+/* #region Navigation Bar */
+nav {
+  background-color: black;
+}
+
+#navbar-menu {
+  display: flex;
+  justify-content: center;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.navbar-menu-item {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.navbar-menu-item a {
+  color: white;
+}
+
+.navbar-menu-item:hover {
+  background-color: var(--hover-color);
+}
+
+/* #endregion */
+
+.content-container {
+  background-color: white;
+  height: fit-content;
+  min-width: fit-content;
+}
+
+#main {
+  height: max-content;
+  min-width: fit-content;
+  padding: 4vw;
+}
+
+#header {
+  background-color: white;
+  display: block;
+  position: sticky;
+  top: 0px;
+}
+
+.header-heading {
+  margin: 0 0;
+  padding: 15px 15px;
+}
+
+#header-photo {
+  width: 100%;
+  display: block;
+}
+
+#background-photo-container {
+  background-image: url("../resources/images/background.jpg");
+  background-color: beige;
+  background-attachment: fixed;
+  padding: 0px 15vw;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"],
+textarea {
+  padding: 7px;
+  font-size: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+textarea {
+  border-color: black;
+}
