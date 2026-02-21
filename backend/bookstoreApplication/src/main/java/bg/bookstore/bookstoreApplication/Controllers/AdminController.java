@@ -27,7 +27,6 @@ public class AdminController {
 
     @GetMapping("/data")
     public GetDataResponse getData() {
-        Auth
         List<Product> products = productRepo.findAll();
         List<ProductTableResponse> productsResponse = new ArrayList<>();
         for (Product product: products)

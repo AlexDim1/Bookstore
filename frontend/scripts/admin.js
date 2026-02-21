@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', populatePage, false);
 
 function populatePage() {
-    fetch('http://localhost:8080/admin/data')
+    fetch('/admin/data')
         .then(response => {
             return response.json();
         }).then(data => {
@@ -138,7 +138,7 @@ function showTab(event, tab) {
 }
 
 function editProduct(id) {
-    fetch('http://localhost:8080/admin/' + id)
+    fetch('/admin/' + id)
         .then(response => {
             return response.json();
         }).then(data => {
@@ -156,7 +156,7 @@ function addProduct() {
         price: document.querySelector('#price-input').value
     }
 
-    fetch('http://localhost:8080/admin/products/add', {
+    fetch('/admin/products/add', {
         method: 'POST',
         body: JSON.stringify(requestBody),
         headers: {
@@ -177,7 +177,7 @@ function saveChanges() {
         price: document.querySelector('#price-input').value
     }
 
-    fetch('http://localhost:8080/admin/' + id + '/update', {
+    fetch('/admin/' + id + '/update', {
         method: 'PUT',
         body: JSON.stringify(requestBody),
         headers: {
@@ -198,7 +198,7 @@ function populateProductInfoForm(product) {
 }
 
 function removeProduct(id) {
-    fetch('http://localhost:8080/admin/' + id + '/delete', {
+    fetch('/admin/' + id + '/delete', {
         method: 'DELETE'
     }).then(() => {
         location.reload(true);

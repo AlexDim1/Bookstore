@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false)
 
 function populateStore() {
-    const request = new Request('http://localhost:8080/store/products');
+    const request = new Request('/store/products');
     const storeBody = document.querySelector('.store-body');
 
     fetch(request)

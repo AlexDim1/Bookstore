@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false)
 
 function populatePage() {
-    const request = new Request('http://localhost:8080/store/products/' + sessionStorage.getItem('Id'));
+    const request = new Request('/store/products/' + sessionStorage.getItem('Id'));
 
     fetch(request)
         .then(response => response.json())
@@ -47,7 +47,7 @@ function buyProduct() {
         buyerAddress: document.querySelector('#address-input').value
     };
 
-    fetch('http://localhost:8080/store/products/' + sessionStorage.getItem('Id') + '/buy', {
+    fetch('/store/products/' + sessionStorage.getItem('Id') + '/buy', {
         method: 'POST',
         body: JSON.stringify(requestBody),
         headers: {
@@ -66,7 +66,7 @@ function postReview() {
         content: document.querySelector('#new-review-content').value
     };
 
-    fetch('http://localhost:8080/store/products/' + sessionStorage.getItem('Id') + '/reviews/add', {
+    fetch('/store/products/' + sessionStorage.getItem('Id') + '/reviews/add', {
         method: 'POST',
         body: JSON.stringify(requestBody),
         headers: {

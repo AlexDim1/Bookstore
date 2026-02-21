@@ -24,6 +24,24 @@ The focus was on learning HTML, CSS and JS.
   - Edit books
   - Remove books
 
+## Screenshots
+
+### Store page
+
+![Store page](docs/images/store-page.png)
+
+### Book page
+
+![Book page](docs/images/book-page.png)
+
+### Admin products page
+
+![Admin products page](docs/images/admin-products-page.png)
+
+### Admin orders page
+
+![Admin orders page](docs/images/admin-orders-page.png)
+
 ## Tech Stack
 
 - Frontend
@@ -34,3 +52,10 @@ The focus was on learning HTML, CSS and JS.
   - Java
   - SpringBoot
   - PostgreSQL
+
+## Running locally
+
+1. Install docker-compose and docker
+2. Open a terminal in the root directory
+3. Run the following command in the terminal `docker-compose up -d`
+4. Access the frontend at `http://localhost:80`
